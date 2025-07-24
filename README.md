@@ -19,11 +19,12 @@ What I had to do:
 * Handle redirections (`>`, `<`, `>>`) and simple pipes (`|`) between commands
 * Properly manage signals such as SIGINT and SIGQUIT to control the shell behavior during input and child execution
 * Implement memory management to avoid leaks during parsing and execution
-* To achieve this, I had to:
-  * Parse and tokenize complex command lines accurately, respecting quotes and spaces
-  * Use system calls like fork, execve, waitpid, and pipe effectively
-  * Build a modular codebase separating parsing, execution, and built-in command handling
-  * Handle errors gracefully and provide meaningful feedback to the user
+
+To achieve this, I had to:
+* Parse and tokenize complex command lines accurately, respecting quotes and spaces
+* Use system calls like fork, execve, waitpid, and pipe effectively
+* Build a modular codebase separating parsing, execution, and built-in command handling
+* Handle errors gracefully and provide meaningful feedback to the user
 
 What I Learned:
 * The inner workings of Unix shells and how commands are processed and executed
